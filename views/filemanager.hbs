@@ -1,0 +1,24 @@
+<div id="leftside">
+    <h2>filemanager</h2>
+    <h3><a href="/deleteAll">usun dane o plikach z tablicy</a></h3>
+</div>
+
+<div id="rightside">
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>obraz</td>
+            <td>size</td>
+            <td>type</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        {{#each files}}
+        <tr>
+            {{>file this}}
+        </tr>
+        {{/each}}
+    </table>
+</div>

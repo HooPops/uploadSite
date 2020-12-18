@@ -1,0 +1,20 @@
+<td>{{id}}</td>
+<td>{{name}}</td>
+<td><img src="/gfx/{{image}}" alt="strona nie obsługuje takiego rozszerzenia :(" class="image" /></td>
+<td>{{size}}</td>
+<td>{{type}}</td>
+<td>
+    <form method="POST" action="/delete/{{id}}">
+        <button type="submit">delete</button>
+    </form>
+</td>
+<td>
+    <form method="GET" action="/info/{{id}}">
+        <button type="submit">Info</button>
+    </form>
+</td>
+<td>
+    <form method="POST" action="/download/{{id}}">
+        <button type="submit">Download</button>
+    </form>
+</td>
